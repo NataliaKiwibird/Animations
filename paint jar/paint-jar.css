@@ -11,7 +11,24 @@ body{
     width: 100px;
     height: 600px;
     margin: 7vh auto;
-    transform: rotate(30deg);
+    transform: rotate(20deg);
+    animation-name: dip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes dip {
+    0% {
+        rotate: (20deg);
+    }
+    30% {
+        rotate: (0deg);
+    }
+    60% {
+        transform: translateY(200px);
+    }
+    100% {
+        rotate: (30deg);
+    }
 }
 .hand{
     width: 50px;
@@ -53,10 +70,12 @@ body{
     border-top: 60px solid #eee;
     border-left: 28px solid #333;
     border-right: 28px solid #333;
+    z-index: -1;
 }
 .paint{
     position: absolute;
     content: "";
+    z-index: 1;
     top: 67%;
     left: 2px; 
     width: 0px;
@@ -68,7 +87,7 @@ body{
 .jar{
     width: 200px;
     height: 200px;
-    margin: 3vh auto;
+    margin: 2vh 39.5%;
 }
 .base{
     width: 180px;
@@ -78,6 +97,8 @@ body{
     border-top: 120px solid #eee;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
+    position: relative;
+    z-index: 2;
 }
 .top{
     width: 100px;
