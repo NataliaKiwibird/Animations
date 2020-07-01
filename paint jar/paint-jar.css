@@ -1,8 +1,8 @@
-body{
-    background: #333;
-}
 .container{
-
+    width: 1092px;
+    height: 875px;
+    background: #333;
+    margin: 0 auto;
 }
 .brush-container{
     transform: scale(0.7);
@@ -99,6 +99,24 @@ body{
     border-right: 13px solid transparent;
     position: relative;
     z-index: 2;
+}
+p{
+    position: absolute;
+    top: -31.5%;
+    left: 13%;
+    z-index: 3;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border-bottom: 0.5px solid #aaa;
+    border-right: 0.5px solid #aaa;
+    border-top: 0.5px solid #ccc;
+    border-left: 0.5px solid #ccc;
+
 }
 .top{
     width: 100px;
